@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Sensia | Au pays de Marie - Rituels naturels pour sentir bon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Application design et responsive qui propose des conseils pratiques et des astuces concrètes pour sentir bon naturellement, avec des recettes de jus et tisanes détox, des routines de massage, des rituels aromatiques quotidiens, et les secrets de beauté des cinq continents.">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/montserrat@3.3.1/index.min.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #f7fafc;
+      color: #232323;
+    }
+    ::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: .01em;
+    }
+    .section-icon {
+      color: #68d391;
+      margin-right: 0.5rem;
+    }
+    .continent-card:hover {
+      box-shadow: 0 6px 36px 0 rgba(68,68,125,0.13);
+      transform: translateY(-2px) scale(1.012);
+    }
+    .underline-link {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800 leading-relaxed">
+  <header class="bg-green-100 shadow text-center py-8 px-6">
+    <h1 class="text-3xl md:text-4xl font-bold mb-1 text-green-800 tracking-tight flex items-center justify-center">
+      <span class="mr-2"><i class="fas fa-leaf"></i></span>
+      Sensia <span class="ml-2 text-green-400 font-light">| Au pays de Marie</span>
+    </h1>
+    <p class="mt-2 text-gray-600 text-lg md:text-xl max-w-2xl mx-auto">Les secrets naturels et culturels pour sentir bon et rayonner, au quotidien comme autour du monde</p>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 pb-12 pt-6">
+    <!-- Sommaire -->
+    <nav class="bg-white rounded-xl shadow mb-12 p-6 flex flex-wrap gap-3 justify-center text-green-700 font-semibold text-base">
+      <a href="#conseils" class="hover:underline flex items-center"><i class="fas fa-lightbulb section-icon"></i>Conseils essentiels</a>
+      <a href="#jus" class="hover:underline flex items-center"><i class="fas fa-blender section-icon"></i>Recettes de jus</a>
+      <a href="#tisanes" class="hover:underline flex items-center"><i class="fas fa-mug-hot section-icon"></i>Tisanes bien-être</a>
+      <a href="#massages" class="hover:underline flex items-center"><i class="fas fa-spa section-icon"></i>Routines massage</a>
+      <a href="#rituels-aromatiques" class="hover:underline flex items-center"><i class="fas fa-wind section-icon"></i>Rituels aromatiques</a>
+      <a href="#continents" class="hover:underline flex items-center"><i class="fas fa-globe section-icon"></i>Secrets des 5 continents</a>
+    </nav>
+
+    <!-- Conseils essentiels -->
+    <section id="conseils">
+      <h2 class="text-2xl font-semibold text-green-700 mb-5 flex items-center"><i class="fas fa-lightbulb section-icon"></i>Conseils essentiels pour sentir bon naturellement</h2>
+      <div class="space-y-3">
+        <div class="bg-green-50 rounded-lg p-4 shadow-sm border-l-4 border-green-300">
+          <span class="font-bold">Hygiène :</span> Douchez-vous régulièrement, privilégiez des savons doux sans parfums artificiels et séchez-vous bien, surtout sous les bras et entre les orteils.
+        </div>
+        <div class="bg-yellow-50 rounded-lg p-4 shadow-sm border-l-4 border-yellow-300">
+          <span class="font-bold">Alimentation :</span> Favorisez les aliments anti-mauvaise haleine : pomme, concombre, persil, menthe fraîche ; limitez l’ail, l’oignon, le fromage fort, l’alcool et le café. Buvez de l’eau tout au long de la journée.
+        </div>
+        <div class="bg-blue-50 rounded-lg p-4 shadow-sm border-l-4 border-blue-300">
+          <span class="font-bold">Lifestyle :</span> Changez de vêtements et de sous-vêtements chaque jour. Optez pour des matières naturelles (coton, lin) qui limitent la transpiration et gardent les odeurs à distance.
+        </div>
+        <div class="bg-pink-50 rounded-lg p-4 shadow-sm border-l-4 border-pink-300">
+          <span class="font-bold">Bouche saine :</span> Brossez-vous les dents 2 fois/jour (2 minutes) et n’oubliez pas la langue. Utilisez du fil dentaire chaque soir. Un bain de bouche au bicarbonate ou à la menthe poivrée fait des miracles.
+        </div>
+        <div class="bg-purple-50 rounded-lg p-4 shadow-sm border-l-4 border-purple-300">
+          <span class="font-bold">Hydratation :</span> Appliquez une crème corporelle naturelle le matin, surtout sur les zones qui s’assèchent vite (coudes, jambes, mains). Une peau bien hydratée retient mieux les parfums naturels !
+        </div>
+      </div>
+    </section>
+
+    <!-- Jus détox -->
+    <section id="jus">
+      <h2 class="text-2xl font-semibold text-green-700 mb-5 flex items-center"><i class="fas fa-blender section-icon"></i>Recettes de jus & smoothies frais pour une haleine et une peau saine</h2>
+      <ul class="space-y-3">
+        <li class="bg-white rounded-lg p-4 border-l-4 border-green-400 shadow-sm">
+          <span class="font-bold">Jus pomme-concombre-gingembre</span>
+          <br>
+          2 pommes vertes + ½ concombre + 1 cm gingembre + ½ citron bio. Passez à l’extracteur/centrifugeuse ou au blender en filtrant, buvez au réveil ou en milieu de matinée.
+          <br><span class="text-sm text-gray-500">→ Rafraîchit, stimule la digestion, tonifie la bouche</span>
+        </li>
+        <li class="bg-white rounded-lg p-4 border-l-4 border-yellow-400 shadow-sm">
+          <span class="font-bold">Jus carotte-persil-orange</span>
+          <br>
+          3 carottes + 1 orange + 1 poignée de persil plat + quelques feuilles de menthe. Broyez et dégustez. Idéal pour un glow instantané !
+        </li>
+        <li class="bg-white rounded-lg p-4 border-l-4 border-blue-400 shadow-sm">
+          <span class="font-bold">Smoothie détente verte</span>
+          <br>
+          1 poignée épinards frais + 1 kiwi + 1 poire + une dizaine de feuilles de menthe + ½ verre d’eau. Mixez, savourez.
+        </li>
+        <li class="bg-white rounded-lg p-4 border-l-4 border-pink-400 shadow-sm">
+          <span class="font-bold">Eau infusée “Haleine fraîche”</span>
+          <br>
+          1 l d’eau plate + 1/2 citron tranché + 1 branche de romarin + 10 feuilles de menthe. Laissez infuser au frais 2h minimum.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Tisanes bien-être -->
+    <section id="tisanes">
+      <h2 class="text-2xl font-semibold text-green-700 mb-5 flex items-center"><i class="fas fa-mug-hot section-icon"></i>Tisanes & infusions bien-être au quotidien</h2>
+      <ul class="space-y-3">
+        <li class="bg-white rounded-lg p-4 border-l-4 border-green-400 shadow-sm">
+          <span class="font-bold">Détox du foie :</span> 1/2 cuil. à café romarin + ortie + citronnelle + 1 rondelle de citron, infuser 8mn dans 250ml d’eau, filtrer.
+        </li>
+        <li class="bg-white rounded-lg p-4 border-l-4 border-blue-400 shadow-sm">
+          <span class="font-bold">Digestion & haleine :</span> 1 cuil. à café graines de fenouil ou anis + 1 cm racine de gingembre râpée + 1 pincée menthe sèche, infuser 6mn.
+        </li>
+        <li class="bg-white rounded-lg p-4 border-l-4 border-pink-400 shadow-sm">
+          <span class="font-bold">Moment cocoon :</span> camomille + fleurs de lavande + feuilles d’oranger. Apaise le soir, favorise le sommeil et ralentit la transpiration nocturne.
+        </li>
+        <li class="bg-white rounded-lg p-4 border-l-4 border-yellow-400 shadow-sm">
+          <span class="font-bold">Tisane fraîcheur “Sourire” :</span> ½ cuil. à café sauge + ½ cuil. thym + 1/2 cuil. menthe, infuser 7mn. À boire en journée ou en gargarisme.
+        </li>
+      </ul>
+      <div class="mt-3 text-sm text-gray-600 italic">
+        <i class="fas fa-leaf mr-2"></i>Pensez à filtrer vos infusions et à ne pas dépasser 2-3 tasses/jour de tisanes fortes en actifs.
+      </div>
+    </section>
+
+    <!-- Massages -->
+    <section id="massages">
+      <h2 class="text-2xl font-semibold text-green-700 mb-5 flex items-center"><i class="fas fa-spa section-icon"></i>Routines de massage visage & pieds</h2>
+      <div class="space-y-5">
+        <div class="bg-white rounded-lg p-4 border-l-4 border-green-400 shadow-sm mb-1">
+          <h3 class="font-bold mb-1 text-lg"><i class="fas fa-face-smile-wink section-icon"></i>Automassage visage basique (3-4 min matin/soir)</h3>
+          <ol class="list-decimal ml-6 text-base mb-1">
+            <li>Échauffez quelques gouttes d’huile végétale ou de crème visage entre vos doigts.</li>
+            <li>Poser les paumes sur les joues, effectuez des effleurages du centre vers l’extérieur.</li>
+            <li>Avec le bout des doigts, partez du menton jusqu’aux tempes pour lisser les traits.</li>
+            <li>Effectuez des petits cercles lissants entre les sourcils, sur le front, puis tapotez légèrement autour des yeux.</li>
+            <li>Finissez par descendre le long du cou en massant doucement.</li>
+          </ol>
+          <span class="text-sm text-gray-500">Bénéfices : détente, éclat du teint, absorption des actifs.</span>
+        </div>
+        <div class="bg-white rounded-lg p-4 border-l-4 border-blue-400 shadow-sm">
+          <h3 class="font-bold mb-1 text-lg"><i class="fas fa-shoe-prints section-icon"></i>Massage pieds bien-être (5 min le soir)</h3>
+          <ol class="list-decimal ml-6 text-base mb-1">
+            <li>Chauffez une noisette de crème/huile dans vos mains.</li>
+            <li>Faites rouler la plante du pied avec le pommeau de la main, du talon vers les orteils.</li>
+            <li>Effectuez des cercles sous la voûte plantaire puis pincez légèrement chaque orteil.</li>
+            <li>Prenez le dessus du pied entre vos deux mains et faites de petits mouvements circulaires.</li>
+            <li>Tirez doucement chaque orteil pour une détente ultime.</li>
+          </ol>
+          <span class="text-sm text-gray-500">Idéal pour relaxer et favoriser un sommeil paisible.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rituels aromatiques -->
+    <section id="rituels-aromatiques">
+      <h2 class="text-2xl font-semibold text-green-700 mb-5 flex items-center"><i class="fas fa-wind section-icon"></i>Rituels aromatiques pour parfumer naturellement sa vie</h2>
+      <div class="space-y-5">
+        <div class="bg-white rounded-lg p-4 border-l-4 border-green-400 shadow-sm mb-1">
+          <span class="font-bold">Spray brumisateur maison pour cheveux:</span> Dans 100ml d’eau minérale, ajoutez 1cuillère à soupe d’hamamélis + 8 gouttes d’huile essentielle (au choix : ylang-ylang, lavande, pamplemousse pour brillance). Vaporisez matin et soir.
+        </div>
+        <div class="bg-white rounded-lg p-4 border-l-4 border-blue-400 shadow-sm mb-1">
+          <span class="font-bold">Désodorisant textile :</span> Remplissez un petit sachet en tissu de lavande séchée, de zestes d’orange et de feuilles de laurier. Glissez-le dans l’armoire pour parfumer vos vêtements naturellement.
+        </div>
+        <div class="bg-white rounded-lg p-4 border-l-4 border-yellow-400 shadow-sm mb-1">
+          <span class="font-bold">Bain aromatique “peau parfumée” :</span> Versez 10 gouttes d’huile essentielle (orange douce, bois de rose ou géranium) dans une c. à soupe de solubilisant ou de lait et mélangez à l’eau chaude. Plongez-vous et détendez-vous ! 
+        </div>
+        <div class="bg-white rounded-lg p-4 border-l-4 border-purple-400 shadow-sm">
+          <span class="font-bold">Astuce express :</span> Pour une haleine toujours fraîche, mâchez une branche de persil, un clou de girofle ou une grain de cardamome !
+        </div>
+      </div>
+      <div class="mt-3 text-xs text-gray-500 italic">
+        Attention : Les huiles essentielles sont puissantes. Faites toujours un test cutané et consultez un professionnel de santé si besoin.
+      </div>
+    </section>
+
+    <!-- Secrets de beauté des cinq continents -->
+    <section id="continents" class="mb-10">
+      <h2 class="text-2xl font-semibold text-green-700 mb-5 flex items-center"><i class="fas fa-globe section-icon"></i>Les secrets de beauté du monde (5 continents)</h2>
+      <div class="space-y-6">
+        <!-- Afrique -->
+        <div class="p-5 bg-white rounded-xl shadow continent-card border-l-4 border-green-300">
+          <h3 class="text-lg font-bold mb-2 text-green-900 flex items-center"><i class="fas fa-sun section-icon"></i>Afrique</h3>
+          <ul class="ml-4 leading-snug">
+            <li><span class="font-semibold">Beurre de karité pur :</span> nourrissant et protecteur ; fondre entre les mains, appliquer généreusement sur le corps et les cheveux pour réparer, protéger et parfumer naturellement. Soin quotidien dans toute l'Afrique de l'Ouest.</li>
+            <li><span class="font-semibold">Savon noir et gommage “djaampé” :</span> appliquez une boule de savon noir sur la peau humide, laissez poser puis gommez à l’aide d’un gant en crin pour éliminer impuretés, lisser et illuminer la peau.</li>
+            <li><span class="font-semibold">Kaolin (argile blanche) :</span> mélangé à un peu d’eau ou d’eau de rose, s’applique sur le visage/aisselles comme masque purifiant, lutte contre les odeurs de transpiration.</li>
+            <li><span class="font-semibold">Huile de baobab :</span> masser le visage pour une peau satinée grâce à cette huile riche en vitamines et acides gras essentiels. Idéale aussi sur les longueurs de cheveux.</li>
+            <li><span class="font-semibold">Encens d’Afrique & herbes aromatiques :</span> les feuilles de neem et de menthe, le musc, fumigation en huttes ou infusion en bains parfumés pour le bien-être général.</li>
+          </ul>
+        </div>
+        <!-- Asie -->
+        <div class="p-5 bg-white rounded-xl shadow continent-card border-l-4 border-pink-300">
+          <h3 class="text-lg font-bold mb-2 text-pink-900 flex items-center"><i class="fas fa-seedling section-icon"></i>Asie</h3>
+          <ul class="ml-4 leading-snug">
+            <li><span class="font-semibold">Layering (Japon/Corée) :</span> superposition de soins : huile démaquillante, nettoyant doux, lotion hydratante, essence, sérum, crème, huile végétale, protection solaire. Chaque étape maximise l'absorption et la fraîcheur de la peau.</li>
+            <li><span class="font-semibold">Eau de riz :</span> rincer le visage avec l’eau douce obtenue après plusieurs rinçages de riz, laisse la peau douce, lumineuse et naturellement parfumée.</li>
+            <li><span class="font-semibold">Thé vert :</span> bu, appliqué en compresse ou utilisé en brume faciale : antioxydant, resserre les pores, apaise les échauffements.</li>
+            <li><span class="font-semibold">Gua sha/rouleau de jade :</span> instrument de massage lissant le matin pour chasser les gonflements, stimuler la micro-circulation et sculpter le visage.</li>
+            <li><span class="font-semibold">Massages kobido et digitopression :</span> anciens rituels anti-âge d’origine japonaise, mouvements rapides et précis stimulant collagène et éclat.</li>
+          </ul>
+        </div>
+        <!-- Europe -->
+        <div class="p-5 bg-white rounded-xl shadow continent-card border-l-4 border-blue-300">
+          <h3 class="text-lg font-bold mb-2 text-blue-900 flex items-center"><i class="fas fa-snowflake section-icon"></i>Europe</h3>
+          <ul class="ml-4 leading-snug">
+            <li><span class="font-semibold">Eaux florales (rose, bleuet, lavande) :</span> utilisées en compresses ou lotion depuis le Moyen-Âge (macérat à froid de pétales dans de l’eau de source, filtration), effet calmant, hydratant et parfum délicat.</li>
+            <li><span class="font-semibold">Bains laiteux ou à l’avoine :</span> diluer 1 - 2 verres de poudre d’avoine, lait de chèvre ou lait d’ânesse dans l’eau du bain pour adoucir la peau à la façon des nobles antiques et nordiques.</li>
+            <li><span class="font-semibold">Hammam et savon d’Alep :</span> hérités du bassin méditerranéen (Syrie/Maroc/Turquie), soin vapeur, gommage et enveloppement à l’huile d’olive/baies de laurier. Parfume et purifie.</li>
+            <li><span class="font-semibold">Masques miellés :</span> mélanger 1 c. à soupe de miel liquide, 1 jaune d’œuf, 1 c. à café de yaourt nature, appliquer 15 minutes pour régénérer la peau sèche et offrir une légère note sucrée.</li>
+            <li><span class="font-semibold">Herbes et fleurs médiévales :</span> camomille contre rougeur, romarin en macérat pour les cheveux, bouquets odorants de thym/menthe dans la maison pour parfumer naturellement.</li>
+          </ul>
+        </div>
+        <!-- Amériques -->
+        <div class="p-5 bg-white rounded-xl shadow continent-card border-l-4 border-yellow-300">
+          <h3 class="text-lg font-bold mb-2 text-yellow-900 flex items-center"><i class="fas fa-leaf section-icon"></i>Amériques</h3>
+          <ul class="ml-4 leading-snug">
+            <li><span class="font-semibold">Masques avocat, papaye, aloe vera :</span> la chair de ces fruits, seule ou mélangée, hydrate en profondeur les peaux exposées au soleil, et apaise les coups de soleil (application en couche fine, rincer après 20 min).</li>
+            <li><span class="font-semibold">Encens amérindien & plantes sacrées :</span> la sauge blanche, le foin d’odeur, le cèdre, utilisés en fumigation pour purifier l’air, la peau et dégager un parfum subtil lors des cérémonies ou soins du corps.</li>
+            <li><span class="font-semibold">Bains de vapeur “temazcal” :</span> tente de sudation, plantes médicinales (menthe, lavande, eucalyptus, etc.), ritualisées pour éliminer les toxines, purifier la peau, induire une fragrance corporelle douce.</li>
+            <li><span class="font-semibold">Infusions pour les cheveux :</span> rinçage des cheveux avec une décoction de camomille, ortie, sauge pour leur donner du brillant et un parfum végétal.</li>
+          </ul>
+        </div>
+        <!-- Océanie -->
+        <div class="p-5 bg-white rounded-xl shadow continent-card border-l-4 border-purple-300">
+          <h3 class="text-lg font-bold mb-2 text-purple-900 flex items-center"><i class="fas fa-water section-icon"></i>Océanie</h3>
+          <ul class="ml-4 leading-snug">
+            <li><span class="font-semibold">Monoï de Tahiti (tradition polynésienne) :</span> faire macérer des fleurs fraîches de tiaré tahiti dans de l’huile de noix de coco raffinée pendant 10 jours au soleil (utilisation : huile soin après les bains, en hydratation quotidienne pour la peau et les cheveux, parfum léger floral).</li>
+            <li><span class="font-semibold">Taurumi Maohi :</span> massage polynésien traditionnel, mouvements larges et enveloppants du bout des doigts avec le monoï, relance la circulation et offre à la peau un éclat et un parfum longue durée.</li>
+            <li><span class="font-semibold">Gommage au sable ou au sel :</span> sur peau humide, massez doucement avec du sable fin ou du sel de mer et du monoï, rincez à l’eau claire : peau satinée et parfumée toute la journée.</li>
+            <li><span class="font-semibold">Rituels eau de mer :</span> bain vivifiant suivi d’un massage huileux complet du corps avec des gestes circulaires (favorise une peau douce et parfumée).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-green-100 py-4 text-center text-green-900 font-semibold text-lg tracking-widest shadow-inner">
+    Sensia | Au pays de Marie · <span class="font-light text-sm">Les rituels modernes & ancestraux pour célébrer votre parfum naturel</span>
+  </footer>
+</body>
+</html>
+
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDvrM%2B0SBSfkdNKhqCiUQfLolhq8y5DG8jA9K9jXZw%2FtrN7vLTjYfHOnTxEOcnCQfvxzC%2FljfiDkIcO718vVpgQpKLW4iHDdlPD0LMopAh6r%2FUBlZvnzFUqgdWEDcNIIXdhjMKxzVRM%2B9HJEZ3ob3FzyfiIZM6wurmTVrIuMMzLAce%2BqBT229WbMKorncig%2FfNY8kvSOUd7nyWdo7pAnlvr%2BPlG6uvawDJZMHqr4dENz5zBjvEdAvDfTWKd4Ka3STXKgXD%2F4sfxGp4W74Mn9UgKaQKGgdkcEkbw2MXTetABbeoci2Onp02%2BqIveBJpevx16TANxR3U4BSSpi7eeZe%2BGelu%2F0smwVUbVANnZ9zFo81D220koDlmigXUVzADjHdisrHzaSd6feZiG6JykIFwUFEmSrF0Ty7WOHN9lbVMB6XJ82Sepl8e2kyKYMFZDDFngU3NfBl0SooPRU1F9cpCKvJQCNxiw8770o81Tyg7LGkaHsHqHbmN3l3tjske6JHpw%3D%3D";
+        window.__genspark_locale = "fr-FR";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDvrM+0SBSfkdNKhqCiUQfLolhq8y5DG8jA9K9jXZw/trN7vLTjYfHOnTxEOcnCQfvxzC/ljfiDkIcO718vVpgQpKLW4iHDdlPD0LMopAh6r/UBlZvnzFUqgdWEDcNIIXdhjMKxzVRM+9HJEZ3ob3FzyfiIZM6wurmTVrIuMMzLAce+qBT229WbMKorncig/fNY8kvSOUd7nyWdo7pAnlvr+PlG6uvawDJZMHqr4dENz5zBjvEdAvDfTWKd4Ka3STXKgXD/4sfxGp4W74Mn9UgKaQKGgdkcEkbw2MXTetABbeoci2Onp02+qIveBJpevx16TANxR3U4BSSpi7eeZe+Gelu/0smwVUbVANnZ9zFo81D220koDlmigXUVzADjHdisrHzaSd6feZiG6JykIFwUFEmSrF0Ty7WOHN9lbVMB6XJ82Sepl8e2kyKYMFZDDFngU3NfBl0SooPRU1F9cpCKvJQCNxiw8770o81Tyg7LGkaHsHqHbmN3l3tjske6JHpw==";
+    </script>
+    
